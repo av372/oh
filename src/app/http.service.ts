@@ -3,13 +3,13 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HttpService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  get(path: string): Observable<HttpResponse<ApiResponse> | object> {
+  //had to change the type to work in stackblitz
+  get(path: string): Observable<HttpResponse<any> | object> {
     return this.http.get(path);
   }
 }
