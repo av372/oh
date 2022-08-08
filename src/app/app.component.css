@@ -1,8 +1,9 @@
 .container {
   display: flex;
+  min-height: 820px;
 }
 
 .breed-menu {
   width: 100px;
-  background-color:rgb(227 227 227);
+  background-color: rgb(227 227 227);
 }
