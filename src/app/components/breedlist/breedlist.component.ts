@@ -12,7 +12,7 @@ export class BreedlistComponent implements OnInit, OnDestroy {
   imageList: string[] = [];
   imageSrc: string = '';
   imageCount: number = 0;
-  subscription: Subscription;
+  subscription!: Subscription;
   constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
