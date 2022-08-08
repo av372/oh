@@ -1,0 +1,23 @@
+<div class="container">
+  <section class="breedlist">
+    <h1>List of Breeds</h1>
+    <section class="count">
+      Number of Images: {{ imageCount }}
+    </section>
+    <table class="breed-table">
+      <tr>
+        <th>SR. No.</th>
+        <th>Breed Image</th>
+        <th>Action</th>
+      </tr>
+      <tr class="breed-values" *ngFor="let image of imageList; let i=index" (click)="displayImage(image)">
+        <td>{{ i }}</td>
+        <td>{{ image }}</td>
+        <td>View</td>
+      </tr>
+    </table>
+  </section>
+  <section class="breedimage">
+    <app-breedimage [imageSrc]="imageSrc" (deleteEvent)="delete(imageSrc)"></app-breedimage>
+  </section>
+</div>

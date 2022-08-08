@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+}
+
+.breed-menu {
+  width: 100px;
+  background-color:rgb(227 227 227);
+}

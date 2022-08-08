@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  margin: 10px;
+}
+th,td{
+  font-size: 0.75rem;
+}
+td {
+  cursor: pointer;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td:hover {
+  color:blue;
+  text-decoration: underline;
+}

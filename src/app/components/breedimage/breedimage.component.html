@@ -1,0 +1,6 @@
+<section class="breed-image">
+  <h1>Breed Image</h1>
+  <img *ngIf="imageSrc" [src]="imageSrc" alt="Breed Image">
+  <button (click)="delete(imageSrc)" [disabled]="!imageSrc">Delete Image Row</button>
+  <p *ngIf="imgDeleted && !imageSrc">Image Successfully deleted.</p>
+</section>
